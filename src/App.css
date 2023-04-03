@@ -5,6 +5,9 @@
 
 .Hotel-visualizer {
   color: var(--black);
+  font-family: cursive;
+  align-items: center;
+  justify-content: center;
 }
 
 .Hotel-visualizer-bg {
@@ -15,4 +18,29 @@
   height: 100vh;
   background-color: var(--white);
   z-index: -1;
+}
+
+.Hotel-visualizer-content {
+  margin: auto;
+  width: 100vw;
+}
+
+.Hotel-visualizer-title {
+  text-align: center;
+  padding-top: 15vh;
+}
+.Hotel-visualizer-subtitle {
+  text-align: center;
+  padding-top: 3vh;
+}
+.Hotel-visualizer-excel-selector-dropdown-div {
+  padding-top: 10vh;
+  text-align: center;
+  margin: auto;
+}
+
+.Hotel-visualizer-download-button-div {
+  padding-top: 25vh;
+  text-align: center;
+  margin: auto;
 }

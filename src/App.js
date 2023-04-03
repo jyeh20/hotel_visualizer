@@ -33,20 +33,30 @@ function App() {
   return (
     <div className="Hotel-visualizer">
       <div className="Hotel-visualizer-bg"></div>
-      <div className="Hotel-visualizer-excel-selector-dropdown-div">
-        <ExcelSelector
-          currentChoice={currentExcelDocument}
-          setCurrentChoice={setCurrentExcelDocument}
-          choiceList={getHotelNamesFromRefs()}
-        />
-      </div>
-      <div className="Hotel-visualizer-download-button-div">
-        <Button
-          disabled={currentExcelDocument === "Select Excel"}
-          onClick={handleDownloadClick}
-        >
-          Download
-        </Button>
+      <div className="Hotel-visualizer-content">
+        <h1 className="Hotel-visualizer-title">
+          Hotel Data, Fresh from the Source
+        </h1>
+        <h4 className="Hotel-visualizer-subtitle">
+          Get your freshest sourced hotel data. Straight off the internet. Super
+          fresh. Get it while it's hot! Fresh hotel data, get your fresh hotel
+          data.
+        </h4>
+        <div className="Hotel-visualizer-excel-selector-dropdown-div">
+          <ExcelSelector
+            currentChoice={currentExcelDocument}
+            setCurrentChoice={setCurrentExcelDocument}
+            choiceList={getHotelNamesFromRefs()}
+          />
+        </div>
+        <div className="Hotel-visualizer-download-button-div">
+          <Button
+            disabled={currentExcelDocument === "Select Excel"}
+            onClick={handleDownloadClick}
+          >
+            Download
+          </Button>
+        </div>
       </div>
     </div>
   );
